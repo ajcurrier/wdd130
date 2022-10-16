@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@500&family=Reem+Kufi+Ink&display=swap');
 
 #content {
     max-width: 1600px; 
@@ -14,11 +14,9 @@
 
   }
 nav a {
-  font-size: larger;
   text-align: center;
   color: #6F2dBD;
-  padding-bottom: 20px;
-  text-decoration: none;
+  padding: 35px
 }
 .navblock {
   padding-bottom: 20px;
@@ -40,6 +38,10 @@ main section {
 
 body{
   background-color: #f2f2f2;
+  font-size: 22px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 header{
   background-color: #60A9A0;
@@ -52,6 +54,10 @@ nav a:hover {
   background-color: #F4D35E;
   color:#60A9A0;
   text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 .book:hover, .join:hover {
   color: #F4D35E;
@@ -63,26 +69,46 @@ nav a:hover {
   border-width: 6px;
   border-color: #B9FAF8;
   border-radius: 25%;
+  font-size: .8em;
+  line-height: 1.5em;
+  padding: 35px;
 }
 footer{
   background-color: #60A9A0;
+  padding: 25px 50px;
 }
 
 .home-title {
   color: #6F2dBD;
+  font-family: "Reem Kufi Ink","Anton";
+  font-size: 2em;
+  margin-top: 10px;
 }
 h4 {
   color: #41706a;
+  font-family: "Reem Kufi Ink","Anton";
+  font-size: 1.2em;
 }
 .msg h2 {
   color: #41706a;
+  font-family: "Reem Kufi Ink","Anton";
+}
+h2 {
+  font-family: "Reem Kufi Ink","Anton";
+  margin: 0;
+  padding: 0;
 }
 .msg p {
   color: #41706a;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  padding-bottom: 15px;
 }
 footer {  
   color: #B9FAF8;
+  padding: 25px 50px;
+  margin-top: 200px;
 } 
+
 
 footer a{
   color: #B9FAF8;
@@ -100,7 +126,52 @@ footer p a:hover {
 .logo {
   width: 80px;
 }
+#logo-link  {
+  padding-top: 5px;
+} 
 .icon {
   width: 80px;
+  padding-top: 10px;
+}
+footer .social img {
+  padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+.card-img {
+  border: 10px solid black;
+}
+main section img {
+  box-sizing: border-box
 }
 
+/*
+
+x Add a border-radius of 5px to the .book, .join selector.
+
+x Add a border of 10px solid #black to a .card-img selector.
+
+Use one of your colors from your site plan instead of black if you wish.
+
+Add box-sizing: border-box; to the main section img selector. Now the border and image will be included in the size of those images.
+
+Here is an example:
+
+
+.book, .join {
+    background-color: #d9c2a3;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+main section img {
+    box-sizing: border-box;
+}
+*/
