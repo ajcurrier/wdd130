@@ -99,25 +99,25 @@
   grid-template-columns: 1fr 1fr;
 }
 .red4 {
-  width: 200px; 
+  width: 300px; 
   height: 300px; 
   background-color: red; 
   grid-row: 1/4;
 } 
 .green4 {
-  width: 200px; 
+  width: 300px; 
   height: 100px; 
   background-color: green; 
   grid-row: 1/2
 } 
 .yellow4 {
-  width: 200px; 
+  width: 300px; 
   height: 100px; 
   background-color: gold; 
   grid-row: 2/3;
 } 
 .blue4 {
-  width: 200px; 
+  width: 300px; 
   height: 100px; 
   background-color: blue; 
   grid-row: 3/4;
