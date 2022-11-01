@@ -1,21 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@500&family=Reem+Kufi+Ink&display=swap');
 
 #content {
-    max-width: 1600px; 
-    
+    max-width: 1600px;
   }
   .logo {
     display:block;
     width: 50px;
   }
-  #hero-img {
-   
-    width: 100%;
+  #logo-link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 
   }
+  .home-grid {
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    max-width: 1600px;
+  }
+  #hero-img { 
+    width: 100%;
+  }
+nav {
+  display: flex;
+  justify-content: space-around;
+}
 nav a {
   text-align: center;
-  color: #6F2dBD;
+  color: black;
   padding: 35px
 }
 .navblock {
@@ -25,15 +37,38 @@ nav a {
 #hero-msg h1, #hero-msg h4, #hero-img {
   text-align: center;
 }
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
+}
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
 .button-box {
   text-align: center;
 }
-main section {
+main {
   text-align: center;
 }
 #background {
   height: 725px;
-  background-color: #B9FAF8 ;
+  background-color: #60A9A0;
+  grid-column: 1/11;
+  grid-row: 4/9;
+  opacity: 80%;
+  z-index: -1;
 }
 
 body{
@@ -45,6 +80,9 @@ body{
 }
 header{
   background-color: #60A9A0;
+  display: grid;
+  grid-template-columns: 150px auto;
+  opacity: 85%;
 }
 nav a:hover {
   color: #60A9A0;
@@ -52,7 +90,7 @@ nav a:hover {
 }
 .book, .join {
   background-color: #F4D35E;
-  color:#60A9A0;
+  color:black;
   text-decoration: none;
   font-size: 18px;
   padding: 15px 30px;
@@ -67,7 +105,7 @@ nav a:hover {
   background-color:#ffffff;
   border-style:double;
   border-width: 6px;
-  border-color: #B9FAF8;
+  border-color: #60A9A0;
   border-radius: 25%;
   font-size: .8em;
   line-height: 1.5em;
@@ -76,16 +114,23 @@ nav a:hover {
 footer{
   background-color: #60A9A0;
   padding: 25px 50px;
+  margin-top: 200px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .home-title {
-  color: #6F2dBD;
+  color: #f9f9f9;
+  text-shadow: 0px 0px #f4f2f4;
   font-family: "Reem Kufi Ink","Anton";
   font-size: 2em;
-  margin-top: 10px;
+  margin-top: 50px;
+
 }
 h4 {
-  color: #41706a;
+  color: #d6e0df;
+  text-shadow: 2px 0px 2px #0a1906;
   font-family: "Reem Kufi Ink","Anton";
   font-size: 1.2em;
 }
@@ -138,40 +183,83 @@ footer .social img {
 }
 .rivers-card, .camping-card, .rapids-card {
   margin: 200px 0;
+  
 }
-.card-img {
-  border: 10px solid black;
+.mountains {
+  box-shadow: 5px 5px 10px #6f7364;
 }
-main section img {
+/* main section img {
   box-sizing: border-box
-}
-
-/*
-
-x Add a border-radius of 5px to the .book, .join selector.
-
-x Add a border of 10px solid #black to a .card-img selector.
-
-Use one of your colors from your site plan instead of black if you wish.
-
-Add box-sizing: border-box; to the main section img selector. Now the border and image will be included in the size of those images.
-
-Here is an example:
-
-
-.book, .join {
-    background-color: #d9c2a3;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-}
+} */
 .card-img {
-    border: 10px solid #d9c2a3;
+  width: 100%;
+border: 6px solid #000605;
+box-shadow: 5px 5px 10px #6f7364;
 }
-main section img {
-    box-sizing: border-box;
+.card-img:hover {
+  opacity: .6;
+  transform: scale(1.1);
 }
-*/
+.rivers-card {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.camping-card {
+  grid-column: 5/7;
+  grid-row: 2/3;
+}
+.rapids-card {
+  grid-column: 8/10;
+  grid-row: 2/3;
+}
+.mountains {
+  grid-column: 2/7;
+  grid-row: 5/8;
+}
+.msg {
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+@media screen and (max-width: 900px) {
+  #hero, .home-grid {
+      display: block;
+      height: auto;
+  }
+  nav, footer {
+      flex-direction: column;
+  }
+  nav a {
+      display: block;
+      padding: 15px;
+  }
+  #hero {
+      margin-top: 0;
+  }
+  #hero-msg {
+      margin-top: 0;
+  }
+  #hero-msg h4 {
+      display: none;
+  }
+  .home-title {
+      font-size: 25px;
+      color: #6f7364;
+  }
+  .rivers-card, .camping-card, .rapids-card { 
+      margin: 50px auto;
+      width: 60%;
+  }
+  #background {
+      display: none;
+  }
+  .mountains, .msg {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+  }
+  footer {
+      margin-top: 25px;
+  }
+}
+          
