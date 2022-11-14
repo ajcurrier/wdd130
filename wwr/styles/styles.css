@@ -266,4 +266,41 @@ box-shadow: 5px 5px 10px #6f7364;
       margin-top: 25px;
   }
 }
+/*Rivers Page*/
+#river-heading {
+  display: inline-block;
+  
+}
+#heading-section {
+  margin: auto;
+  width: fit-content;
+}
+.river-swish {
+  width: 40px;
+  display: inline-block;
+  padding: 5px 2px;
+  
+}
+.river-sublink img{
+  width: 80px
+}
+.river-sublink {
+  height: 100px;
+  display: inline-block;
+  flex-direction: row;
+}
+.rivericon {
+  width: 80px;
+  margin: 0px 8px;
+}
+#heading-section p {
+  text-align: center;
+  margin-top: 0px;
+  /* display: inline; */
+}
+#page-heading {
+  max-width: fit-content;
+  margin: auto;
+}
+
           
