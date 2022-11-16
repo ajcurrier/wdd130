@@ -228,6 +228,153 @@ box-shadow: 5px 5px 10px #6f7364;
   grid-row: 6/7;
   box-shadow: 5px 5px 10px #6f7364;
 }
+
+/*Rivers Page*/
+#river-heading {
+  display: inline-block;
+  
+}
+#heading-section {
+  margin: auto;
+  width: fit-content;
+  grid-column: 2/10;
+}
+.river-swish {
+  width: 50px;
+  display: inline-block;
+  padding: 8px 5px;
+  
+}
+.river-sublink img{
+  width: 100%
+}
+.river-sublink {
+  max-width: 25%;
+  display: inline-block;
+  margin: 2%;
+  box-shadow: 5px 5px 10px #6f7364;
+  border: 3px solid #000605;
+}
+.river-sublink:hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
+#heading-section p {
+  text-align: center;
+  margin-top: 0px;
+  padding: 5px;
+  font-size: 0.8em;
+  /* display: inline; */
+}
+.river-banner {
+  z-index: 0;
+  width:100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -75px;
+}
+#idaho {
+  background-color: #B9FAF8;
+  padding:20px;
+  grid-column: 2/10;
+  grid-row: 2/3;
+  margin-top: 25px;
+}
+#idaho-h2 {
+  /* align-self:baseline; */
+  margin-top: 75px;
+  z-index: 1;
+  display: inline-block;
+  position: relative;
+  color: white;
+
+}
+#idaho-banner {
+  align-self: start;
+  z-index: 1;
+  display: inline-block;
+  /* margin-top: -75px; */
+}
+.copy-box {
+  padding-top: 50px;
+}
+
+
+#utah {
+  /* background-color: #ffffff; */
+  padding:20px;
+  grid-column: 2/10;
+  grid-row: 3/4;
+  margin-top: 25px;
+  margin: auto;
+}
+
+#utah-h2 {
+  /* align-self:baseline; */
+  margin-top: 75px;
+  z-index: 1;
+  display: inline-block;
+  position: relative;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+#utah-banner {
+  align-self: start;
+  /* z-index: 0; */
+  display: inline-block;
+  /* margin-top: -75px; */
+  margin: auto;
+  position: relative;
+}
+
+#page-heading {
+  max-width: fit-content;
+  margin: auto;
+}
+
+#river-body {
+grid-column:1/11;
+margin: auto;
+
+}     
+
+.h2-box {
+  display: inline;
+  z-index: 3;
+  /* grid-row: 2/3; */
+  grid-column: 3/5;
+  align-items: start;
+  height: fit-content;
+}
+/* river-copy is the p and h2 inside river-body */
+
+#arizona {
+  background-color: #B9FAF8;
+  padding:20px;
+  grid-column: 2/10;
+  grid-row: 4/5;
+  margin-top: 25px;
+  
+}
+#arizona-h2 {
+  /* align-self:baseline; */
+  margin-top: 75px;
+  z-index: 1;
+  display: inline-block;
+  position: relative;
+  color: rgb(10, 9, 9);
+
+}
+#arizona-banner {
+  align-self: start;
+  /* z-index: 1; */
+  display: inline-block;
+  /* margin-top: -75px; */
+  width: 100%;
+}
+
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
       display: block;
@@ -268,142 +415,17 @@ box-shadow: 5px 5px 10px #6f7364;
   footer {
       margin-top: 25px;
   }
+  .river-banner {
+    margin-top: 0;
+  }
+  h2 {
+    position:static;
+    color: black;
+    margin-top: 0;
+    font-size: x-large;
+  }
+  .copy-box {
+    padding-top: 0px;
+  }
 }
 
-/*Rivers Page*/
-#river-heading {
-  display: inline-block;
-  
-}
-#heading-section {
-  margin: auto;
-  width: fit-content;
-  grid-column: 2/10;
-}
-.river-swish {
-  width: 50px;
-  display: inline-block;
-  padding: 8px 5px;
-  
-}
-.river-sublink img{
-  width: 100%
-}
-.river-sublink {
-  max-width: 25%;
-  display: inline-block;
-  margin: 2%;
-  box-shadow: 5px 5px 10px #6f7364;
-  border: 3px solid #000605;
-}
-.river-sublink:hover {
-  opacity: .6;
-  transform: scale(1.1);
-}
-#heading-section p {
-  text-align: center;
-  margin-top: 0px;
-  padding: 5px;
-  font-size: 0.8em;
-  /* display: inline; */
-}
-#idaho {
-  background-color: #B9FAF8;
-  padding:20px;
-  grid-column: 2/10;
-  grid-row: 2/3;
-  margin-top: 25px;
-}
-#idaho-h2 {
-  /* align-self:baseline; */
-  margin-top: 75px;
-  z-index: 1;
-  display: inline-block;
-  position: relative;
-  color: white;
-
-}
-#idaho-banner {
-  align-self: start;
-  z-index: 1;
-  display: inline-block;
-  margin-top: -75px;
-}
-.copy-box {
-  padding-top: 50px;
-}
-
-
-#utah {
-  /* background-color: #ffffff; */
-  padding:20px;
-  grid-column: 2/10;
-  grid-row: 3/4;
-  margin-top: 25px;
-}
-
-#utah-h2 {
-  /* align-self:baseline; */
-  margin-top: 75px;
-  z-index: 1;
-  display: inline-block;
-  position: relative;
-  color: white;
-
-}
-#utah-banner {
-  align-self: start;
-  z-index: 1;
-  display: inline-block;
-  margin-top: -75px;
-}
-
-#page-heading {
-  max-width: fit-content;
-  margin: auto;
-}
-
-#river-body {
-grid-column:1/11;
-margin: auto;
-
-}     
-
-.river-banner {
-  z-index: 0;
-  width:100%;
-  max-width: 1000px;
-}
-
-.h2-box {
-  display: inline;
-  z-index: 3;
-  /* grid-row: 2/3; */
-  grid-column: 3/5;
-  align-items: start;
-  height: fit-content;
-}
-/* river-copy is the p and h2 inside river-body */
-
-#arizona {
-  background-color: #B9FAF8;
-  padding:20px;
-  grid-column: 2/10;
-  grid-row: 4/5;
-  margin-top: 25px;
-}
-#arizona-h2 {
-  /* align-self:baseline; */
-  margin-top: 75px;
-  z-index: 1;
-  display: inline-block;
-  position: relative;
-  color: rgb(10, 9, 9);
-
-}
-#arizona-banner {
-  align-self: start;
-  z-index: 1;
-  display: inline-block;
-  margin-top: -75px;
-}
