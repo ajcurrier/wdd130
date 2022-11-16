@@ -276,7 +276,7 @@ box-shadow: 5px 5px 10px #6f7364;
 }
 #idaho {
   background-color: #B9FAF8;
-  padding:20px;
+  padding:5%;
   grid-column: 2/10;
   grid-row: 2/3;
   margin-top: 25px;
@@ -303,7 +303,7 @@ box-shadow: 5px 5px 10px #6f7364;
 
 #utah {
   /* background-color: #ffffff; */
-  padding:20px;
+  padding:5%;
   grid-column: 2/10;
   grid-row: 3/4;
   margin-top: 25px;
@@ -352,7 +352,7 @@ margin: auto;
 
 #arizona {
   background-color: #B9FAF8;
-  padding:20px;
+  padding: 5%;
   grid-column: 2/10;
   grid-row: 4/5;
   margin-top: 25px;
