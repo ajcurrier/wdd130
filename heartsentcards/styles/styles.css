@@ -162,6 +162,12 @@ align-self: center;
     grid-column: 1/4;
     background-color: #F7F2DE;
     align-content: center;
+    position: fixed;
+    overflow-x:hidden ;
+    width: 33%;
+    top: 100px;
+    left: 0;
+    z-index: -1;
 }
 .main-body {
     grid-column-start: 5;
