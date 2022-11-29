@@ -112,6 +112,7 @@ nav a {
     background-color: #FFCDFC;
     width: 180px;
     color:#7F407B;
+    border-radius: 10px;
 }
 .nav-links:hover {
     /* opacity: 100; */
