@@ -1,40 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=PT+Sans&display=swap');
+
+/* Fonts */
+h1, h2, h3, h4, h5 {
+    font-family: "Dancing Script", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #7F407B;
+    font-size: 2.3rem;
+}
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3em;
+}
+p {
+    font-family: "PT Sans", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
 /* alignment: */
+
 img {
     width: 100%;
 }
 body{
     margin: auto;
-    border-style: solid;
     max-width: 1600px;
 }
 .head-foot{
     width: 100%;
     height: 100px;
     background-color: #7F407B;
-    
 }
 #head-fine{
     height:fit-content;
 }
-#header-image-box{
-    height: fit-content;
+.header-image-box{
+    height: 50%;
     z-index: 0;
-    border-style: solid;
-    /* margin: auto; */
     max-width: 1600px;
-    margin-top: -50px;
     position: relative;
 }
 #header-image{
     width: 100%;
-    min-height: 50%;
-    opacity: 50%;
+    min-height: 200px;
+
+    opacity: 95%;
 }
 .header-h1{
     position: relative;
+    display: flex;
+    justify-content: center;
     z-index: 2;
     color:rgb(230, 215, 237);
-    font-size: 2rem;
+    font-size: 5rem;
+    opacity: 80%;
+    
        
 }
 #header-h1-box {
@@ -43,44 +63,141 @@ body{
     position: absolute;
     top: 30%;
     text-align: center;
-    /* margin: 500px; */
-    /* max-width: fit-content; */
     width:100%;
-    max-height: fit-content;
-    display: inline-block;
+    /* display: inline-block; */
 }
-#under-image-header{
-    height: 100px;
+.under-image-header {
+    height: 130px;
     width: 100%;
-}
+    /* display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    grid-template-rows: 100px; */
+    
+    /* grid-auto-flow: column; */
+/*     
+    position: relative; */
+}   
 main{
     max-width: 1600px;
 }
-nav{
+nav {
     display: flex;
     justify-content: space-around;
-
+    
+    
 }
-nav a {
+/* 
+nav a{
+    
+    
     text-align: center;
-    color: black;
-    padding: 35px;
-    text-decoration: none;
+    align-content: center;
+    position: fixed; 
+
+}*/
+nav a {
+    width: 75%;
+    margin:2%;
+    /* height: 50%; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.nav-links {
+    height: 50%;
+    font-family: "PT Sans", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    background-color: #FFCDFC;
+    width: 180px;
+}
+.nav-links:hover {
+    /* opacity: 100; */
+    /* transform: scale(1.2); */
+    background-color: #f7f3de;
 }
 #logo-box{
-    width: 75px;
-    display: inline;
+    height: 100px;
+    margin-left: 15px;
+    width: 119px;
+    margin-top: 10px;
+    
 }
 #logo {
-    width:100px;
-}
-#left-section-images {
-width: 100%;
-/* max-width: 1600px; */
+    height: 100px;
+    width: 119px;
+
 }
 
+/* 
+#index-header-link {
+    grid-column: 4/6;
+
+}
+#sf-header-link {
+    grid-column: 6/8;
+
+}
+#grt-header-link {
+    grid-column: 8/10;
+
+} */
+#left-section-images {
+padding: 25px;
+margin:auto;
+align-self: center;
+}
+.l-images {
+    margin-top: 25px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+}
+#left-section-box {
+    grid-column: 1/4;
+    background-color: #F7F2DE;
+    align-content: center;
+}
+.main-body {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    margin-top: 10%;
+}
 
 /* footer */
-.social {
-    width: 80px;
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: #7F407B;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+/* .social-box {
+    display: inline-flex;
+} */
+.social img {
+    width: 50px;
+    /* grid-column: 7/10;
+    display: inline-flex;
+    position: relative;
+    margin-top: 200px; */
+    
+}
+h5 {
+    font-size: 1em;
+    color: #FFCDFC;
+    width: fit-content;
+    margin-left: 10px;
+}
+
+
+a h5:hover {
+    color:#F7F2DE;
+    text-decoration: solid;
 }
