@@ -68,8 +68,8 @@ body{
     /* display: inline-block; */
 }
 .under-image-header {
-    height: 130px;
-    width: 100%;
+    height: 80px;
+    max-width: 1000px;
     /* display: grid;
     grid-template-columns: repeat(9,1fr);
     grid-template-rows: 1fr;
@@ -83,6 +83,10 @@ body{
 main{
     max-width: 1600px;
 }
+/* #nav-links-container {
+    width: 500px;
+    height: 130px;
+} */
 nav {
     display: flex;
     justify-content: space-around;
@@ -100,36 +104,46 @@ nav a{
 }*/
 nav a {
     width: 75%;
-    margin:2%;
+    margin: auto 2%;
     /* height: 50%; */
     align-items: center;
     display: flex;
     justify-content: center;
 }
 .nav-links {
-    height: 50%;
+    height: 45%;
     font-family: "PT Sans", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
-    background-color: #FFCDFC;
+    /* background-color: #FFCDFC; */
+    border: 2px solid #FFCDFC;
     width: 180px;
-    color:#7F407B;
-    border-radius: 10px;
+    color:#FFCDFC;
+    cursor: pointer;
+    /* border-radius: 10px; */
 }
 .nav-links:hover {
     /* opacity: 100; */
     /* transform: scale(1.2); */
-    background-color: #f7f3de;
+    background-color: #FFCDFC;
+    color:#7F407B;
+}
+#active {
+    /* opacity: 100; */
+    transform: scale(1.2);
+    background-color: #F7F2DE;
+    color:#7F407B;
 }
 #logo-box{
-    height: 100px;
-    margin-left: 15px;
+    height: 80px;
+    margin: auto 10px;
+    /* margin-left: 15px; */
     width: 119px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     
 }
 #logo {
-    height: 100px;
-    width: 119px;
+    height: 80px;
+    /* width: 119px; */
 
 }
 
@@ -159,6 +173,7 @@ align-self: center;
     display: grid;
     grid-template-columns: repeat(9,1fr);
 }
+
 #left-section-box {
     grid-column: 1/4;
     background-color: #F7F2DE;
@@ -246,4 +261,19 @@ a h5:hover {
 }
 #more-info-pg2 h4 {
     font-size: 1.9rem;
+}
+
+/* Greeting Tips */
+#gtmain-body h1 {
+    grid-column: 2/13;
+}
+#gtmain-body {
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+}
+#gt-left-column {
+    grid-column: 2/7;
+}
+#gt-right-column {
+    grid-column: 8/13;
 }
