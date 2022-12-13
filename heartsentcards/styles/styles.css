@@ -134,18 +134,14 @@ nav a {
     color:#7F407B;
 }
 #logo-box{
-    height: 80px;
+    /* height: 80px; */
     margin: auto 10px;
     /* margin-left: 15px; */
-    width: 119px;
+    /* width: 119px; */
     /* margin-top: 10px; */
     
 }
-#logo {
-    height: 80px;
-    /* width: 119px; */
 
-}
 
 /* 
 #index-header-link {
