@@ -231,7 +231,7 @@ a h5:hover {
 }
 .cell-filler #under-navnar {
     grid-row: 2/3;
-    columns: 2/9;
+    grid-column: 2/9;
 }
 #strengthen-friendships-copyp1 {
     grid-column: 2/6;
